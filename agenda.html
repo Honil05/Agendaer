@@ -1,0 +1,73 @@
+<html>
+<head>
+ <title>AGENDA CONTACTOS</title>
+ <script src = "agenda.js"></script>
+ <link rel="stylesheet" href="agenda.css">
+</head>
+<body >
+    <header>
+        <h1>Agenda Web</h1>
+
+         <ul>
+        <li name="frase">Bienvenido a este espacio donde podras agregar y ver contactos guardados</li>
+        </ul>
+
+    </header>
+
+    
+   
+<div id="divPagina">
+
+    <div id="divBanner">
+       
+    </div>
+    <div id="divCentro">
+        <div id= "Acciones">
+            <button onclick="agregarContacto();">Agregar Contacto</button>
+            <button onclick="obtenerDatos();">Mostrar Contactos Guardados</button>
+
+            
+        </div>
+        <div id= "divFormulario" style="display: none;">
+              <table>
+                  <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="txtNombre"/></td>
+                  </tr>
+                  <tr>
+                    <th>Apellido:</th>
+                    <td><input type="text" id="txtApellido"/></td>
+                  </tr>
+                  <tr>
+                    <th>Telefono:</th>
+                    <td><input type="text" id="txtTelefono"/></td>
+                  </tr>
+                  <tr>
+    
+                    <td colspan="2" align="center">
+                        <button id="boton" type="submit" onclick="guardar();">Guardar</button>
+                        <button id="boton" onclick="mostrar();">Mostrar</button>
+                        <button id="boton" onclick="ocultar();">Ocultar</button>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+       <fieldset>
+           <legend>CONFIRMADOS</legend>
+           <div id="Todosloscontactos">
+          </div>
+          
+       </fieldset>
+
+       <fieldset>
+
+        <legend>CONTACTOS GUARDADOS</legend>
+             <div id="itla">
+              
+          </div>
+
+           </fieldset>
+        </div>
+     </div>
+  </body>
+</html>
